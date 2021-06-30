@@ -1,0 +1,84 @@
+int main() {
+  
+ int planetNum;
+ float weight;
+
+ std::cout << "What is you earth weight? \n";
+ std::cin >> weight;
+
+ std::cout << "1 Mercury \n";
+ std::cout << "2 Venus \n";
+ std::cout << "3 Mars \n";
+ std::cout << "4 Jupiter \n";
+ std::cout << "5 Saturn \n";
+ std::cout << "6 Uranus \n";
+ std::cout << "7 Neptune \n";
+ std::cout << "Choose the number of the planet you want to fight: \n";
+ std::cin >> planetNum;
+
+
+ if (planetNum == 1) {
+    weight = weight * 0.38;
+ } else if ( planetNum == 2) {
+    weight = weight * 0.91;
+ } else if (planetNum == 3) {
+    weight = weight * 0.38;
+ } else if (planetNum == 4) {
+    weight = weight * 2.34;
+ } else if (planetNum == 5) {
+    weight = weight * 1.06;
+ } else if (planetNum == 6) {
+    weight = weight * 0.92;
+ } else if (planetNum == 7) {
+    weight = weight * 1.19;
+ }
+
+ std::cout << "Your weight on that planet is: " << weight << "\n";
+ 
+ }
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int main () {
+
+ int planetNum;
+ float weight;
+
+ std::cout << "What is you earth weight? \n";
+ std::cin >> weight;
+
+ std::cout << "1 Mercury \n";
+ std::cout << "2 Venus \n";
+ std::cout << "3 Mars \n";
+ std::cout << "4 Jupiter \n";
+ std::cout << "5 Saturn \n";
+ std::cout << "6 Uranus \n";
+ std::cout << "7 Neptune \n";
+ std::cout << "Choose the number of the planet you want to fight: \n";
+ std::cin >> planetNum;
+
+
+switch (planetNum) {
+ case 1: ( weight = weight * 0.38 );
+    std::cout << "Your weight on this planet is: " << weight << "\n";
+    break;
+ case 2: ( weight = weight * 0.91 );
+    std::cout << "Your weight on this planet is: " << weight << "\n";
+    break;
+ case 3: ( weight = weight * 0.38 );
+     std::cout << "Your weight on this planet is: " << weight << "\n";
+     break;
+ case 4: ( weight = weight * 2.34 );
+    std::cout << "Your weight on this planet is: " << weight << "\n";
+    break;
+ case 5: ( weight = weight * 1.06 );
+    std::cout << "Your weight on this planet is: " << weight << "\n";
+    break;
+  case 6: ( weight = weight * 0.92 );
+     std::cout << "Your weight on this planet is: " << weight << "\n";
+     break;
+  case 7: ( weight = weight * 1.19 );
+     std::cout << "Your weight on this planet is: " << weight << "\n";
+     break;
+ }
+}
